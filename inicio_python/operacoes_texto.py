@@ -1,5 +1,0 @@
-print("Olá, Mundo!")
-print('Olá, Mundo 2!')
-print("Olá, " + "Michele Ferreira")
-print("a" in "Michele")
-print("i" in "Michele")
