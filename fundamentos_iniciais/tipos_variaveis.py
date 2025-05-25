@@ -3,5 +3,6 @@ peso = 54.35
 nome = "Michele Ferreira"
 mulher = True
 
-print(type(idade), type(peso), type(nome), type(mulher))
-print("A " + str(nome) + " tem " + str(idade) + " anos e pesa " + str(peso) + "kg.")
+print(type(idade), type(peso), type(nome), type(mulher)) # exibe tipos de variáveis
+print("A " + str(nome) + " tem " + str(idade) + " anos e pesa " + str(peso) + "kg.") # concatena variáveis
+print("A {} tem {} anos e pesa {}kg." .format(nome, idade, peso)) # utiliza método format()
