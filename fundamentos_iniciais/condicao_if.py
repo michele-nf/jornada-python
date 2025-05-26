@@ -32,3 +32,40 @@ elif vendas > (meta * 2):
 else:
     bonus = 0.03 * vendas
     print(f"Ganhou {bonus} de bônus")
+
+# comparadores
+idade = 18
+if idade == 18:
+    print("Você tem exatamente 18 anos")
+else:
+    print("Você não tem 18 anos")
+
+senha = "1234"
+if senha != "senha123":
+    print("Senha incorreta")
+else:
+    print("Acesso permitido")
+
+nota = 7.5
+if nota > 7.0:
+    print("Aprovado")
+else:
+    print("Recuperação ou reprovado")
+
+estoque = 5
+if estoque < 10:
+    print("Estoque baixo, é necessário repor")
+else:
+    pass  # Não faz nada se o estoque estiver OK
+
+frase = "Python é uma linguagem poderosa"
+if "poderosa" in frase:
+    print("A frase contém a palavra 'poderosa'")
+else:
+    print("Palavra não encontrada")
+
+logado = False
+if not logado:
+    print("Por favor, faça login")
+else:
+    print("Bem-vindo ao sistema")
