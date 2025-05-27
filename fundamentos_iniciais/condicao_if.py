@@ -69,3 +69,29 @@ if not logado:
     print("Por favor, faça login")
 else:
     print("Bem-vindo ao sistema")
+
+# and e or
+idade = 25
+tem_carteira = True
+
+if idade >= 18 and tem_carteira:
+    print("Pode alugar um carro")
+else:
+    print("Não pode alugar o carro")
+
+assinante = False
+idade >= 18
+
+if assinante or idade >= 18:
+    print("Acesso ao conteúdo liberado")
+else:
+    print("Acesso restrito")
+
+tem_conta = True
+idade = 17
+responsavel_autorizou = True
+
+if tem_conta and (idade >= 18 or responsavel_autorizou):
+    print("Acesso permitido ao sistema")
+else:
+    print("Acesso negado - requisitos não atendidos")
