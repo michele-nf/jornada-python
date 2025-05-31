@@ -6,3 +6,16 @@ print(len(nome))
 
 print(email[0])
 print(nome[1]) 
+print(email[-3])
+print(nome[:7]) #não considera índice 7
+print(nome[7:]) #considera índice 7
+print(nome[2:7])
+
+faturamento = 1000
+custo = 500
+lucro = faturamento - custo
+
+print("O faturamento da loja foi de: " + str(faturamento))
+print("O faturamento da loja foi de: {}." .format(faturamento))
+print("O faturamento da loja foi de: {0}. O custo da loja foi de: {1}, lembrando que o faturamento foi de: {0}." .format(faturamento, custo))
+print("O faturamento da loja foi de: %d. O custo da loja foi de: %d." % (faturamento, custo))
