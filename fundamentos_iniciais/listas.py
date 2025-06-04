@@ -41,3 +41,16 @@ print("O tamanho da lista é de {} produtos.".format(produtos))
 max_vendas = max(vendas)
 min_vendas = min(vendas)
 print("O produto mais vendido teve {} unidades vendidas e o produto menos vendido teve {} unidades vendidas.".format(max_vendas, min_vendas)) 
+
+novos_produtos = ["armário, escada"]
+todos_produtos = produtos + novos_produtos
+print(f"Nova lista de produtos: {todos_produtos}.")
+
+produtos.extend(novos_produtos)
+print(f"Nova lista de produtos: {produtos}.")
+
+produtos.sort()
+print(produtos)
+
+vendas.sort(reverse=True)   
+print(vendas)
