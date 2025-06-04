@@ -34,3 +34,10 @@ try:
     produtos.remove(remover_produtos)
 except:
     print(f"O produto {remover_produtos} não existe na lista.")
+
+tamanho = len(produtos)
+print("O tamanho da lista é de {} produtos.".format(produtos))
+
+max_vendas = max(vendas)
+min_vendas = min(vendas)
+print("O produto mais vendido teve {} unidades vendidas e o produto menos vendido teve {} unidades vendidas.".format(max_vendas, min_vendas)) 
