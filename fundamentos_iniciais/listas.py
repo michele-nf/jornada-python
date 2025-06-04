@@ -54,3 +54,5 @@ print(produtos)
 
 vendas.sort(reverse=True)   
 print(vendas)
+print(', '.join(produtos))
+print('\n'.join(produtos))
