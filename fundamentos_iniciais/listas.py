@@ -56,3 +56,10 @@ vendas.sort(reverse=True)
 print(vendas)
 print(', '.join(produtos))
 print('\n'.join(produtos))
+
+lista1 = ["A", "B", "C", "D",]
+lista2  = lista1.copy()
+lista1[0] = "F"
+
+print(lista1)
+print(lista2)
