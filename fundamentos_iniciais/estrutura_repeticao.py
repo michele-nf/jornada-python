@@ -22,3 +22,11 @@ for venda in vendas:
 qtd_funcionarios = len(vendas)
 
 print('O percentual de pessoas que bateram a meta foi de {:.1%}'.format(qtd_bateu_meta / qtd_funcionarios))
+
+produtos = ['pepsi', 'coca', 'guaraná']
+estoque = [1500, 5000, 25]
+nivel_minimo = 50
+
+for i, qtde in enumerate(estoque):
+    if qtde < nivel_minimo:
+        print(f'{produtos[i]} está abaixo do nível mínimo de estoque. Temos apenas {estoque[i]} unidades.')
