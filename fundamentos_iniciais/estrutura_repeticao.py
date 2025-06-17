@@ -51,3 +51,19 @@ for i, lista in enumerate(estoque):
                 fabricas_nivel_baixo.append(fabricas[i])
 
 print(fabricas_nivel_baixo)
+
+meta = 110
+vendas = [100, 150, 1500, 2000, 120]
+
+for venda in vendas:
+    if venda < meta:
+        print('A loja não ganha bônus.')
+        break
+    print(venda)
+
+for venda in vendas:
+    if venda < meta:
+        continue
+    print(venda)
+
+
