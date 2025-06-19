@@ -1,3 +1,4 @@
+#FOR
 for i in range(5):
     print('Michele')
 
@@ -66,4 +67,14 @@ for venda in vendas:
         continue
     print(venda)
 
+
+#WHILE
+venda = input('Registre um produto. Para cancelar o registro de um novo produto, basta apertar enter com a caixa vazia.')
+vendas =[]
+
+while venda != '':
+    vendas.append(venda)
+    venda = input('Registre um produto. Para cancelar o registro de um novo produto, basta apertar enter com a caixa vazia.')
+
+print(f'Registro Finalizado! As vendas cadastradas foram: {vendas}')
 
