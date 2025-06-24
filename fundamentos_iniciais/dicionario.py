@@ -9,3 +9,20 @@ print(vendas_tecnologia['samsung galaxy'])
 # pegando a informação com o método get
 print(vendas_tecnologia.get('iphone'))
 print(vendas_tecnologia.get('samsung galaxy'))
+
+lucro_1tri = {'janeiro': 15000, 'fevereiro': 12000, 'março': 10000}
+lucro_2tri = {'abril': 14300, 'maio': 1720, 'junho': 1000}
+
+# Adicionar e modificar valores
+print(lucro_1tri)
+lucro_1tri['abril'] = 10000
+print(lucro_1tri)
+lucro_1tri.update(lucro_2tri)
+print(lucro_1tri)
+
+# Deletar valores
+del lucro_1tri['abril']
+print(lucro_1tri)
+valor = lucro_1tri.pop('maio')
+print(lucro_1tri)
+print(valor)
