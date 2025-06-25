@@ -26,3 +26,11 @@ print(lucro_1tri)
 valor = lucro_1tri.pop('maio')
 print(lucro_1tri)
 print(valor)
+
+total_notebooks = 0
+
+for chave in vendas_tecnologia:
+    if 'notebook' in chave:
+        total_notebooks += vendas_tecnologia[chave]
+
+print(f'Total de vendas de notebooks: {total_notebooks}')
