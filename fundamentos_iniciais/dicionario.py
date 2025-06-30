@@ -34,3 +34,25 @@ for chave in vendas_tecnologia:
         total_notebooks += vendas_tecnologia[chave]
 
 print(f'Total de vendas de notebooks: {total_notebooks}')
+
+for produto, vendas in vendas_tecnologia.items():
+    if vendas > 5000:
+        print(f'O produto {produto} teve vendas acima de 5000 unidades, totalizando {vendas} unidades vendidas.')
+
+for chave in vendas_tecnologia:
+    print(f'{chave}: {vendas_tecnologia[chave]} unidades vendidas.')
+print('-' * 40)
+
+lista_chaves = list(vendas_tecnologia.keys())
+lista_chaves.sort()
+
+for chave in lista_chaves:
+    print(f'{chave}: {vendas_tecnologia[chave]} unidades vendidas.')
+
+lista_a = [1, 2, 3, 4, 5]
+Lista_b = ['João', 'Maria', 'José', 'Ana', 'Pedro']
+
+lista_ab = zip(lista_a, Lista_b)
+print(lista_ab)
+dicionario_ab = dict(lista_ab)
+print(dicionario_ab)
