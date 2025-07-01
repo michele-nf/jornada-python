@@ -56,3 +56,6 @@ lista_ab = zip(lista_a, Lista_b)
 print(lista_ab)
 dicionario_ab = dict(lista_ab)
 print(dicionario_ab)
+
+for i in range(1, 10, 2):
+    print(i)
