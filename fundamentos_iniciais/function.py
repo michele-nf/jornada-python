@@ -27,3 +27,13 @@ for produto in produtos:
         print(f'{produto} é uma bebida alcoólica.')
     elif eh_da_categoria(produto, 'BSA'):
         print(f'{produto} não é uma bebida alcoólica.')
+
+preco = 1500
+custo = 400
+lucro = 785
+
+def carga_tributaria(preco, custo, lucro):
+    imposto = preco - custo - lucro
+    return imposto / preco
+
+print('A carga tributária foi de {:.1%}'.format(carga_tributaria(preco, custo, lucro)))
