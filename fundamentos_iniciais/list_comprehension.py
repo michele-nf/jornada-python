@@ -13,3 +13,10 @@ print(impostos)
 # Usando list comprehension
 impostos_comprehension = [preco * 0.3 for preco in preco_produtos]
 print(impostos_comprehension)
+
+# Ordenar duas listas relacionadas
+lista_auxiliar = list(zip(produtos, preco_produtos))
+lista_auxiliar.sort()
+produtos = [produto for produto in lista_auxiliar]
+
+print(produtos)
