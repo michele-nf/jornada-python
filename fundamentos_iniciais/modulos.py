@@ -1,5 +1,6 @@
 import webbrowser
 import time
+from datetime import datetime
 
 webbrowser.open("https://docs.python.org/3/tutorial/modules.html")
 
@@ -25,3 +26,10 @@ dia_da_semana = hora_local.tm_wday
 
 print("Data: {}/{}/{}".format(dia, mes, ano))
 print(f"Data: {dia}/{mes}/{ano}")
+
+agora = datetime.now()
+print(agora)
+data = agora.date()
+hora = agora.time()
+print(data)
+print(hora)
