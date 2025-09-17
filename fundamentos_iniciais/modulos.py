@@ -33,3 +33,14 @@ data = agora.date()
 hora = agora.time()
 print(data)
 print(hora)
+
+#O usuário fornece a data de nascimento no formato dd/mm/aaaa. Crie um script python que calcula a idade do usuário.
+data_nascimento = input("Digite sua data de nascimento (dd/mm/aaaa): ")
+data_nascimento = datetime.strptime(data_nascimento, "%d/%m/%Y")
+data_atual = datetime.now()
+
+idade = data_atual.year - data_nascimento.year
+if (data_atual.month, data_atual.day) < (data_nascimento.month, data_nascimento.day):
+    idade -= 1
+
+print(f"Sua idade é: {idade} anos")
